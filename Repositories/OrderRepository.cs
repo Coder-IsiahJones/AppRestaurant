@@ -1,10 +1,6 @@
 ﻿using AppRestaurant.Models;
 using AppRestaurant.ViewModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 
 namespace AppRestaurant.Repositories
 {
@@ -42,7 +38,7 @@ namespace AppRestaurant.Repositories
                 // Set
                 objOrderDetail.OrderId = OrderId;
                 objOrderDetail.ItemId = item.ItemId;
-                objOrderDetail.Discount = item.Discount;                
+                objOrderDetail.Discount = item.Discount;
                 objOrderDetail.Total = item.Total;
                 objOrderDetail.UnitPrice = item.UnitPrice;
                 objOrderDetail.Quantity = item.UnitPrice;
@@ -64,9 +60,6 @@ namespace AppRestaurant.Repositories
             }
 
             return true;
-
         }
     }
 }
-
-    

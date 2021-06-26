@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace AppRestaurant.ViewModel
+﻿namespace AppRestaurant.ViewModel
 {
     public class OrderDetailViewModel
     {
@@ -13,6 +8,5 @@ namespace AppRestaurant.ViewModel
         public decimal Quantity { get; set; }
         public decimal Discount { get; set; }
         public decimal Total { get; set; }
-        
     }
 }

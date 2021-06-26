@@ -45,7 +45,6 @@
         text-align: left;
         vertical-align: middle;
     }
-
 </style>
 
 <fieldset>
@@ -72,7 +71,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     Total :
-                    <input type="text" readonly="readonly" id="txtFinalTotal" style="text-align: right;" class="form-control" value="0.00" name="FinalTotal"/>
+                    <input type="text" readonly="readonly" id="txtFinalTotal" style="text-align: right;" class="form-control" value="0.00" name="FinalTotal" />
                 </div>
             </div>
         </div>
@@ -108,7 +107,6 @@
             </div>
         </div>
 
-
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
@@ -126,7 +124,6 @@
         </div>
 
         <div class="row">
-
 
             <div class="col-md-6">
                 <div class="form-group">
@@ -172,8 +169,8 @@
 </fieldset>
 
 <div style="margin-top: 25px;">
-    <input data-toggle="modal" data-target="#divPayment" data-backdrop="static" data-keydrop="false" 
-           type="button" value="Checkout" name="checkout" id="btnCheckOut" class="btn btn-primary"/>
+    <input data-toggle="modal" data-target="#divPayment" data-backdrop="static" data-keydrop="false"
+           type="button" value="Checkout" name="checkout" id="btnCheckOut" class="btn btn-primary" />
 </div>
 
 <div id="divPayment" class="modal fade" role="dialog">
@@ -218,7 +215,6 @@
                 <button class="btn btn-success" id="btnPayment" value="Payment">Payment</button>
                 <button class="btn btn-danger" id="btnClose" data-dismiss="modal" value="close">Close</button>
             </div>
-
         </div>
     </div>
 </div>
@@ -287,7 +283,6 @@
             }
         });
 
-        
     }
 
     function RemoveItem(itemId) {
@@ -322,7 +317,7 @@
             + parseFloat(Quantity).toFixed(2) + "</td><td>"
             + parseFloat(Discount).toFixed(2) + "</td><td>"
             + parseFloat(Total).toFixed(2)
-            + "</td><td> <input type='button' value='Remove' name='remove' class='btn btn-danger' onclick='RemoveItem(this)'/> </td></tr>";
+            + "</td><td> <input type='button' value='Remove' name='remove' class='btn btn-danger' onclick='RemoveItem(this)' /> </td></tr>";
 
         tblItemList.append(ItemList);
         FinalItemTotal();
@@ -341,7 +336,7 @@
         $("#txtFinalTotal").val(parseFloat(FinalTotal).toFixed(2));
         $("#txtPaymentTotal").val(parseFloat(FinalTotal).toFixed(2));
         $("#txtBalance").val(parseFloat(FinalTotal).toFixed(2));
-        
+
     }
 
     function ResetItem() {
